@@ -4,7 +4,6 @@ Presence = require("presence"):setup({
 	editing_text      = "Editing %s",
 	neovim_image_text = "The One True Text Editor",
 	main_image        = "neovim",
-    log_level = "debug",
 	workspace_text = function(git_project_name, buffer)
 	local project_name = git_project_name
 	-- Not in a git repository, so do some custom parsing
