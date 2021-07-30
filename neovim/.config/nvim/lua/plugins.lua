@@ -135,6 +135,8 @@ return require("packer").startup(
         
     use {'mattn/emmet-vim'}
 
+    use {'pest-parser/pest.vim'}
+
     use {
     'AckslD/nvim-whichkey-setup.lua',
         requires = {{
