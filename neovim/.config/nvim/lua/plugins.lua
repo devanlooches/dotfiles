@@ -30,6 +30,8 @@ end
 
 vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
+vim.o.runtimepath = vim.o.runtimepath..',~/.local/share/nvim/site/pack/packer/start/himalaya/vim'
+
 return require("packer").startup(
     function(use)
         -- Packer can manage itself as an optional plugin
@@ -137,6 +139,8 @@ return require("packer").startup(
 
     use {'pest-parser/pest.vim'}
 
+    use {'soywod/himalaya', rtp = 'vim/himalaya.vim'}
+ 
     use {
     'AckslD/nvim-whichkey-setup.lua',
         requires = {{
