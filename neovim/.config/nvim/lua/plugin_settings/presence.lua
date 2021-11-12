@@ -1,6 +1,6 @@
 Presence = require("presence"):setup({
 	-- This config table shows all available config options with their default values
-	auto_update       = false,
+	auto_update       = true,
 	editing_text      = "Editing %s",
 	neovim_image_text = "The One True Text Editor",
 	main_image        = "neovim",
@@ -53,5 +53,5 @@ Presence = require("presence"):setup({
 	end
 	return dir_name
 end
-print('Discord presence is turned off by default. You can update it by pressing <leader>du')
-vim.api.nvim_set_keymap('n','<leader>du' ,':lua package.loaded.presence:update()<CR>', {})
+-- print('Discord presence is turned off by default. You can update it by pressing <leader>du')
+-- vim.api.nvim_set_keymap('n','<leader>du' ,':lua package.loaded.presence:update()<CR>', {})
