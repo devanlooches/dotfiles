@@ -1,0 +1,10 @@
+[editor]
+line-number = "relative"
+idle-timeout = 0
+completion-trigger-len = 0
+shell = ["nu -c"]
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
